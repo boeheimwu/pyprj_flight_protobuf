@@ -1,4 +1,8 @@
 import base64
+# trip=｛單程：one way｝｛來回：round trip｝｛多停點：multi-city｝
+# seat=｛經濟艙：economy｝｛豪華經濟艙：premium economy｝｛商務艙：business｝｛頭等艙：first｝
+# Protobuf
+# + https://protobuf-decoder.netlify.app/
 #=====================
 # trip=one way
 trip_one_way_tfs_bef = "CBwQAhoqEgoyMDI2LTA3LTAxKABqDAgDEggvbS8wZnRreHIMCAMSCC9tLzA3ZGZrQAFIAXABggELCP___________wGYAQI"
@@ -148,3 +152,4 @@ html_content = f"""
 with open("bef_vs_aft.html", "w", encoding="utf-8") as f:
     f.write(html_content)
     
+
