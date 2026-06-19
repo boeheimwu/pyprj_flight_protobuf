@@ -24,14 +24,15 @@ trip_one_way_tfs_aft_raw = trip_one_way_tfs_bef_raw.replace(trip_one_way_d1_bef,
 trip_one_way_tfs_aft = base64.urlsafe_b64encode(trip_one_way_tfs_aft_raw).decode().rstrip("=")
 #=====================
 # trip=round trip
-trip_round_trip_tfs_bef = "CBwQAhoqEgoyMDI2LTA3LTA1KABqDAgDEggvbS8wZnRreHIMCAMSCC9tLzA3ZGZrGioSCjIwMjYtMDctMTAoAGoMCAMSCC9tLzA3ZGZrcgwIAxIIL20vMGZ0a3hAAUgBcAGCAQsI____________AZgBAQ"
+# round trip 起飛時間 0800~1900
+trip_round_trip_tfs_bef = "CBwQAhowEgoyMDI2LTEwLTE5QAhIElAAWBdqDAgDEggvbS8wZnRreHIMCAMSCC9tLzA3ZGZrGjASCjIwMjYtMTAtMjRACEgSUABYF2oMCAMSCC9tLzA3ZGZrcgwIAxIIL20vMGZ0a3hAAUgBcAGCAQsI____________AZgBAQ"
 # URL-safe Base64 decode
 trip_round_trip_tfs_bef_raw = base64.urlsafe_b64decode(trip_round_trip_tfs_bef + "==")
 
-trip_round_trip_d1_bef = b"2026-07-05"
-trip_round_trip_d2_bef = b"2026-07-10"
-trip_round_trip_d1_aft = b"2026-10-09"
-trip_round_trip_d2_aft = b"2026-10-13"
+trip_round_trip_d1_bef = b"2026-10-19"
+trip_round_trip_d2_bef = b"2026-10-24"
+trip_round_trip_d1_aft = b"2026-12-07"
+trip_round_trip_d2_aft = b"2026-12-12"
 
 assert len(trip_round_trip_d1_bef) == len(trip_round_trip_d1_aft)
 assert len(trip_round_trip_d2_bef) == len(trip_round_trip_d2_aft)
@@ -49,14 +50,15 @@ trip_round_trip_tfs_aft = base64.urlsafe_b64encode(trip_round_trip_tfs_aft_raw).
 
 #=====================
 # trip=Multi-city
-trip_multi_city_tfs_bef = "CBwQAholEgoyMDI2LTA4LTA3KABqDAgDEggvbS8wZnRreHIHCAESA0hORBooEgoyMDI2LTA4LTExagwIAxIIL20vMDdkZmtyDAgDEggvbS8wZnRreEABSAFwAYIBCwj___________8BmAED"
+# Multi-city 起飛時間 0800~1900
+trip_multi_city_tfs_bef = "CBwQAhorEgoyMDI2LTExLTE2QAhIElAAWBdqDAgDEggvbS8wZnRreHIHCAESA0hORBowEgoyMDI2LTExLTIxQAhIElAAWBdqDAgDEggvbS8wN2Rma3IMCAMSCC9tLzBmdGt4QAFIAXABggELCP___________wGYAQM"
 # URL-safe Base64 decode
 trip_multi_city_tfs_bef_raw = base64.urlsafe_b64decode(trip_multi_city_tfs_bef + "==")
 
-trip_multi_city_d1_bef = b"2026-08-07"
-trip_multi_city_d2_bef = b"2026-08-11"
-trip_multi_city_d1_aft = b"2026-11-15"
-trip_multi_city_d2_aft = b"2026-11-19"
+trip_multi_city_d1_bef = b"2026-11-16"
+trip_multi_city_d2_bef = b"2026-11-21"
+trip_multi_city_d1_aft = b"2026-12-07"
+trip_multi_city_d2_aft = b"2026-12-12"
 
 assert len(trip_multi_city_d1_bef) == len(trip_multi_city_d1_aft)
 assert len(trip_multi_city_d2_bef) == len(trip_multi_city_d2_aft)
@@ -152,4 +154,3 @@ html_content = f"""
 with open("bef_vs_aft.html", "w", encoding="utf-8") as f:
     f.write(html_content)
     
-
