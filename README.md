@@ -18,5 +18,6 @@
 # 福岡住宿
 | 飯店            | Jalan  |  
 |----------------|------|
+| 福岡 Dormy Inn博多祇園<sub>（<a href="https://maps.app.goo.gl/wbstxjVHfDVmQoyg9" target="_blank">loc</a>）</sub>| [link](https://www.jalan.net/yad396138) |
 | Dormy Inn PREMIUM 博多·運河城前<sub>（<a href="https://maps.app.goo.gl/RWSUyZYpsuRpMMLb8" target="_blank">loc</a>）</sub>| [link](https://www.jalan.net/yad335555) |
 
